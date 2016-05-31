@@ -1,0 +1,12 @@
+{
+  "name": "youtube-api",
+  "version": "1.0.0",
+  "description": "Youtube Playlist Api test",
+  "authors": [
+    "Aykut Alp"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "bootstrap": "^3.3.6"
+  }
+}

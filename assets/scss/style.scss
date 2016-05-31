@@ -1,0 +1,83 @@
+// Style.scss
+body {
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #c5c4c3;
+}
+
+.wrapper {
+  background: url("../img/bg.png") ;
+  background-size: contain;
+  height: 620px;
+}
+.tv {
+  background-color: #c5c4c3;
+  width: 750px;
+  height: 644px;
+  z-index: 99;
+  position: relative;
+  margin: 0 auto;
+
+  & .frame {
+    position: absolute;
+    height: 100%;
+  }
+
+  & img {
+    height: 100%;
+  }
+
+}
+.controllers {
+  top: 0px;
+  position: absolute;
+
+  & .on-off {
+    position: absolute;
+    width: 74px;
+    height: 73px;
+    top: 182px;
+    left: 593px;
+    -webkit-transform: rotate(70deg);
+    -moz-transform: rotate(70deg);
+    -moz-transition: all 1.2s ease;
+    transition: all 1.2s ease;
+    // -webkit-transform: rotate(70deg);
+  }
+  & .on-off:hover {
+    cursor: pointer;
+  }
+
+  & .rotate {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+  }
+}
+
+.next-wrapper {
+  position: absolute;
+  top: 290px;
+  left: 613px;
+}
+.player-next {
+  color: #c7d4c7;
+  position: absolute;
+  font-size: 20px;
+  top: 10px;
+  left: 15px;
+  text-shadow: -3px 3px #2e2632;
+  transition: all 0.5s ease;
+}
+.player-next:hover {
+  color: #727574;
+  cursor: pointer;
+}
+.dial {
+  position: absolute;
+}
+
+.screen {
+  margin-top: 153px;
+  margin-left: 0px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello</title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <div class="tv">
+        <div class="frame">
+          <img src="img/tv.png">
+          <div class="controllers">
+            <a class="playnext">Next</a>
+            <a class="pause">Pause</a>
+            <a class="stop">Stop</a>
+            <a class="resume">play</a>
+            <span class="time"></span>
+            <!-- Knob.js progressbar and font-awasome next button -->
+            <div class="next-wrapper">
+              <input class="dial">
+              <i class="fa fa-step-forward player-next" aria-hidden="true"></i>
+            </div>
+            <!-- Pause and resume controller -->
+            <img class="on-off" src="img/onoff.png">
+          </div>
+        </div>
+        <!-- Youtube api player -->
+        <div class="screen" id="mplayer"></div>
+      </div>
+    </div>
+
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="http://cdn.crunchify.com/wp-content/uploads/code/knob.js"></script>
+  <script src="js/script.js"></script>
+
+  </body>
+</html>
