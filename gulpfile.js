@@ -13,7 +13,7 @@ var cssnano = require('gulp-cssnano'); //Minify CSS
 
 
 gulp.task('clean', function() {
-    return del(['css/*', 'js/*']);
+    return del(['css/style.css', 'js/script.js']);
 });
 
 gulp.task('scripts', function(){

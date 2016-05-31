@@ -17,14 +17,14 @@ body {
   position: relative;
   margin: 0 auto; }
   .frame .logo {
-    width: 165px;
+    width: 150px;
     position: absolute;
     z-index: 101;
     top: 20px;
     left: 60px; }
   .frame .description {
     font-family: "Open Sans", sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     color: #fff;
     position: absolute;
     right: 45px;
