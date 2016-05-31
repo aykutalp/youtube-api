@@ -11,7 +11,7 @@ body {
   background-size: contain;
   height: 620px;
 }
-.tv {
+.frame {
   background-color: #c5c4c3;
   width: 750px;
   height: 644px;
@@ -19,12 +19,31 @@ body {
   position: relative;
   margin: 0 auto;
 
-  & .frame {
+  & .logo{
+    width: 165px;
+    position: absolute;
+    z-index: 101;
+    top: 20px;
+    left: 60px;
+  }
+
+  & .description {
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+    right: 45px;
+    top: 30px;
+    z-index: 101;
+    text-shadow: 1px 1px 4px #333;
+  }
+
+  & .tv {
     position: absolute;
     height: 100%;
   }
 
-  & img {
+  & .img-tv {
     height: 100%;
   }
 
@@ -59,20 +78,24 @@ body {
   position: absolute;
   top: 290px;
   left: 613px;
+
+  & .player-next {
+    color: #c7d4c7;
+    position: absolute;
+    font-size: 20px;
+    top: 10px;
+    left: 15px;
+    text-shadow: -3px 3px #2e2632;
+    transition: all 0.5s ease;
+
+    &:hover {
+      color: #727574;
+      cursor: pointer;
+    }
+  }
+
 }
-.player-next {
-  color: #c7d4c7;
-  position: absolute;
-  font-size: 20px;
-  top: 10px;
-  left: 15px;
-  text-shadow: -3px 3px #2e2632;
-  transition: all 0.5s ease;
-}
-.player-next:hover {
-  color: #727574;
-  cursor: pointer;
-}
+
 .dial {
   position: absolute;
 }
