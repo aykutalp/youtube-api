@@ -33,9 +33,28 @@ body {
     color: #fff;
     position: absolute;
     right: 45px;
-    top: 30px;
+    top: 42px;
     z-index: 101;
     text-shadow: 1px 1px 4px #333;
+  }
+
+  & .social-icons {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    right: 45px;
+    top: 13px;
+    z-index: 101;
+  }
+
+  & .social-icons a {
+    color: #fff;
+    transition: all 1s ease;
+  }
+
+  & .social-icons a:hover {
+    color: #c7d4c7;
   }
 
   & .tv {

@@ -19,7 +19,7 @@ gulp.task('clean', function() {
 gulp.task('scripts', function(){
   return gulp.src('assets/scripts/*.js')
     .pipe(concat('script.js'))
-    //.pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest('js/'));
 });
 
@@ -27,7 +27,7 @@ gulp.task('scripts', function(){
 gulp.task('sass', function(){
   return gulp.src('assets/scss/*.scss')
     .pipe(sourcemaps.init()) // It is used for concatenation scss files
-    .pipe(sass({outputStyle: 'nested'}))
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer('last 10 versions'))
     .pipe(concat('style.css'))
     //.pipe(cssnano()) // use sass compressed
