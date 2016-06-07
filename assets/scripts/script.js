@@ -110,7 +110,7 @@ function displayTime(timeValue){
 $('.dial').knob({
   'width': 40,
   'height': 40,
-  'thickness': .2,
+  'thickness': .18,
   'fgColor': '#c7d4c7',
   'bgColor': '#282430',
   'readOnly': false,
@@ -134,6 +134,11 @@ $('.on-off').on('click', function(){
 })
 
 $('.player-next').on('click', function(){
+  // Check Resume and Pause controller - if it's paused set it to resume after clicking next
+  onOff = $('.on-off');
+  if (onOff.hasClass('rotate')){
+    onOff.removeClass('rotate');
+  }
   nextVid();
 });
 
