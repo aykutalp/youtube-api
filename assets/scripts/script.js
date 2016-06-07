@@ -93,6 +93,10 @@ function videoTitle(id){
       function(data){
           var vTitle = data.items[0].snippet.title;
           console.log(vTitle);
+          // Remove (Official Video) - This could be a little bit better condition :)
+          vTitle = vTitle.split('(').shift().split('[').shift().split('official').shift().split('Official').shift();
+          document.title = 'Muzikly | ' + vTitle;
+          $('.description').text(vTitle);
       }
   );
 }
