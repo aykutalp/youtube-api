@@ -67,6 +67,8 @@ function onPlayerStateChange(event) {
 function nextVid() {
   num = randomId();
   // 3- Load videos one by one
+  // loadPlaylist function doesn't work how I want
+  // this way I get duration correcly
   mPlayer.loadVideoById({
     'videoId': videoList[num]
   });
@@ -135,9 +137,9 @@ $('.on-off').on('click', function(){
 
 $('.player-next').on('click', function(){
   // Check Resume and Pause controller - if it's paused set it to resume after clicking next
-  onOff = $('.on-off');
-  if (onOff.hasClass('rotate')){
-    onOff.removeClass('rotate');
+  $onOff = $('.on-off');
+  if ($onOff.hasClass('rotate')){
+    $onOff.removeClass('rotate');
   }
   nextVid();
 });
